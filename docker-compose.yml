@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+
+    api:
+      image: hunsche/a2-web-api
+      ports:
+          - 8080:3000
+      environment: 
+        - NODE_ENV= 'production'
+        - PROD_DB_USERNAME='postgres'
+        - PROD_DB_NAME='a2_web'
+        - PROD_DB_HOSTNAME='localhost'
+        - PROD_DB_PORT='5432'
