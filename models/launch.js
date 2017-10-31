@@ -1,13 +1,14 @@
-"use strict";
 module.exports = (sequelize, DataTypes) => {
   var Launch = sequelize.define(
     "Launch",
     {
-      id: DataTypes.INTEGER,
-      date: DataTypes.DATE,
+      date: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW
+      },
       category: DataTypes.INTEGER,
       description: DataTypes.TEXT,
-      value: DataTypes.DECIMAL(10, 2).associate,
+      value: DataTypes.DECIMAL(10, 2),
       type: {
         type: DataTypes.ENUM,
         values: ["expense", "recipe"]
