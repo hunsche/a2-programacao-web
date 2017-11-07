@@ -1,9 +1,9 @@
 const launch = require("../controllers").launch;
 
 module.exports = app => {
-  app.post("/api/launch", launch.post);
-  app.get("/api/launch/:id", launch.getId);
-  app.get("/api/launches", launch.get);
-  app.delete("/api/launch/:id", launch.destroy);
-  app.put("/api/launch/:id", launch.update);
+  app.post("/lancamentos", launch.post);
+  app.get("/lancamentos/:id", launch.getId);
+  app.get("/lancamentos", launch.get);
+  app.delete("/lancamentos/:id", launch.destroy);
+  app.put("/lancamentos/:id", launch.update);
 };

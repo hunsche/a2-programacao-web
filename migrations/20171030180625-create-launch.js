@@ -8,20 +8,20 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      date: {
-        allowNull: false,
-        type: Sequelize.DATE,
-        defaultValue: Sequelize.NOW
-      },
-      description: {
+      // date: {
+      //   allowNull: false,
+      //   type: Sequelize.DATE,
+      //   defaultValue: Sequelize.NOW
+      // },
+      descricao: {
         allowNull: false,
         type: Sequelize.TEXT
       },
-      value: {
+      valor: {
         allowNull: false,
         type: Sequelize.DECIMAL(10, 2)
       },
-      category: {
+      categoria_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
@@ -31,8 +31,8 @@ module.exports = {
         onUpdate: "cascade",
         onDelete: "cascade"
       },
-      type: {
-        type: Sequelize.ENUM("expense", "recipe"),
+      tipo: {
+        type: Sequelize.TEXT,
         allowNull: false
       },
       createdAt: {
