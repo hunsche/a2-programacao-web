@@ -8,3 +8,7 @@ https://a2-programacao-web.herokuapp.com/api
 
 # Front
 https://a2-programacao-web-react.herokuapp.com/
+
+# Integrantes
+* Matheus Arendt Hunsche
+* Mathias Lorenzo Bordinhon Von Gilsa 
